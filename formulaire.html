@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+       <form method="post" action="formulaire.php">
+           <div id="section1">
+             <select name="" >
+
+                 <option value="madame"> Madame</option>
+                 <option value="mademoiselle">Mademoiselle</option>
+                  <option value="monsieur">Monsieur</option>
+             </select><br><br>
+        </div>
+
+            <div class="section 2">
+               <label for="prenom">Entrer votre prenom</label>
+               <input id = js type="text" placeholder="prenom" ><br>
+    
+
+                <label for="Nom">Entrer votre Nom</label>
+                <input id = js type="text" placeholder="nom" size="10" maxlength="25" ><br>
+
+                 <label for="nombre">Telephone</label>
+                 <input id='nombre' name='nombre' type='number_format' maxlength="9" placeholder="(*221)" required autofocus><br>
+             <label for="email">Adresse email</label>
+             <input type="email" id="email" name="mail" placeholder="email" required><br>
+
+               <label for="email">Adresse physique</label>
+               <input type="text" id="physique" name="physique" placeholder="physique" required><br>
+            </div><br><br>
+            <div>
+
+               <select name="Niveau d'etude" >
+
+                   <option value="bfem">BFEM</option>
+                   <option value="bac">BAC</option>
+                   <option value="bac+1">BAC+1</option>
+                   <option value="bac+2">BAC+2</option>
+                   <option value="lp">LP</option>
+                   <option value="master1">Master1</option>
+                   <option value="master2">Master2</option>
+              </select><br><br>
+            </div>
+               <div class="section3">
+                    <input type="submit" value="Envoyer">
+                </div>
+                <button onclick="maFonction()">Cliquer ici</button>
+       </form>
+       
+    
+</body>
+<script src="formulaire.js">
+    var elt = document.querySelector=('input');
+		console.log(elt.size);
+		elt.size = 10;
+        elt.maxLength = 25;
+</script>
+</html>
